@@ -1,0 +1,8 @@
+-gradi di parallelismo -> 8 (7 thread piu il main)
+-il main interagisce con l'utente
+-chiedere all'utente il nome della classe, della quale si voglia visualizzare l'orario
+-cercare all'interno dei 7 thread contenti l'orario dei professori le ore della classe ricercata dall'utente
+-dati condivisi -> contengono la variabile che immagazzinerà l'orario di una classe
+e anche le variabili dell'orario di ogni giorno che servono per immagazzinare tutto l'orario all'interno della varabile orario
+-ci deve essere sincronizzazione tra i thread
+- mutua esclusione -> il dato in mutua esclusione sarà la variabile contente l'orario della classe e tutte le variabili dei giorni
