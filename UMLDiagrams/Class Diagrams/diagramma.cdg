@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="diagramma">
+  <ClassDiagramComponents>
+    <Class name="main" package="" visibility="public" xPosition="89.0" yPosition="65.0">
+      <Fields>
+        <Field name="c" type="string" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="datiCondivisi" package="" visibility="public" xPosition="391.0" yPosition="65.0">
+      <Fields>
+        <Field name="variabiliDeiGiorni" type="String[]" visibility="private"/>
+        <Field name="orario" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="composizioneGiorni" returnType="void" visibility="public"/>
+        <Method name="visualizzazioneOrario" returnType="void" visibility="public"/>
+        <Method name="setClasse" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="threadAgostoni" package="" visibility="public" xPosition="111.0" yPosition="299.0">
+      <Fields>
+        <Field name="agostoni" type="String" visibility="private"/>
+        <Field name="dc" type="datiCondivisi" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="run" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="implement" source="datiCondivisi" target="main" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
